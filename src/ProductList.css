@@ -12,7 +12,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #4CAF50;
+    background-color: #158a36;
     color: #fff!important;
     padding: 15px;
     display: flex;
@@ -58,7 +58,14 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.product-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
 /* Product Card */
 .product-card {
     flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */
@@ -115,7 +122,7 @@ body {
 /* Pseudo-elements - Sale badge */
 .product-card::before {
     content: "SALE";
-    background-color: #e74c3c;
+    background-color: #c9b804;
     color: #fff;
     position: absolute;
     top: 0;
