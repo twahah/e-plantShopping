@@ -12,7 +12,14 @@ function ProductList({ onHomeClick }) {
     setAddedToCart((prevState) => ({ // Update the local state to reflect that the product has been added
         ...prevState, // Spread the previous state to retain existing entries
         [product.name]: true, // Set the current product's name as a key with value 'true' to mark it as added
+     
     }));
+
+    const calculateTotalQuantity = () => {
+      return CartItems ? CartItems.reduce((total, item) => total + item.quantity, 0) : 0;
+    };
+
+    
     };
 
     const plantsArray = [
