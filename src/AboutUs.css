@@ -1,22 +1,22 @@
 .about-us-container {
-    width: 1000px;
-    /* margin: 0 auto; */
-    /* padding: 20px; */
+    /* width: 1000px; */
+    margin: 0 auto;
+    padding: 20px;
     /* background-color: red; */
     text-align: justify;
   }
   
   .about-us-heading {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
   }
   
   .about-us-description {
-    font-size: 18px;
+    font-size: 15px;
     color: #666;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
   }
   
