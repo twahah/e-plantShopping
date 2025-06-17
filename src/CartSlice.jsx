@@ -1,7 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-
-
 export const CartSlice = createSlice({
   name: 'cart',
   initialState: {
@@ -21,6 +19,9 @@ export const CartSlice = createSlice({
       }
     },
     removeItem: (state, action) => {
+      const { name } = action.payload; // Destructure the product name from the action payload
+      // Filter out the item that matches the given name to remove it from the cart
+      state.items = state.items.filter(item => item.name !== name);
     },
     updateQuantity: (state, action) => {
       const { name, quantity } = action.payload; // Destructure the product name and new quantity from the action payload
